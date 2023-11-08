@@ -1,2 +1,6 @@
-1)Django framework for our app
-2)Using REST API 
+1)Django framework for our app 
+2)Using REST API-added in the setting.py file along with the home app
+3)Made changes to fileupload/setting.py and urls.py
+4)Create a custom serializer-validate and convert data to and from the representation that is suitable for the API's endpoints
+5)Filepond for drag and drop of file uploading functionality in html
+    pond.getFiles-gives all the uploaded files

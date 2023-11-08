@@ -1,0 +1,2 @@
+1)Django framework for our app
+2)Using REST API 

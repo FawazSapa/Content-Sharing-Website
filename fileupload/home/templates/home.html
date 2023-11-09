@@ -97,7 +97,7 @@
 
     <div class="text-center">
 
-        <img src="public\static\image\undraw.svg" class="img-fluid img-responsive" style="height: 200px;">
+        <img src="/media/image/undraw.svg" class="img-fluid img-responsive" style="height: 200px;">
     </div>
 
     <input type="file" class="my-pond mt-4" multiple name="filepond" />
@@ -161,7 +161,7 @@
 
                     url = `http://127.0.0.1:8000/download/${result.data.folder}`
 
-                    document.getElementById('btn').style.display = ''df -h
+                    document.getElementById('btn').style.display = '';
                     
 
                 })
@@ -169,6 +169,7 @@
         }
 
         function copyClip() {
+            console.log('dd')
         
          
             /* Copy the text inside the text field */

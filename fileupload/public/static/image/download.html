@@ -49,32 +49,36 @@
       margin: 0 auto;
       background-color: #03a9f4;
     }
+
     .background {
 
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
- .clipboard {
-  border: 0;
-  padding: 15px;
-  border-radius: 3px;
-  background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
-  cursor: pointer;
-  color: #04048c;
-  font-family: "Karla", sans-serif;
-  font-size: 16px;
-  position: relative;
-  top: 0;
-  transition: all 0.2s ease;
-}
-body .clipboard:hover {
-  top: 2px;
-}
-body p {
-  font-weight: 700;
-}
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clipboard {
+      border: 0;
+      padding: 15px;
+      border-radius: 3px;
+      background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+      cursor: pointer;
+      color: #04048c;
+      font-family: "Karla", sans-serif;
+      font-size: 16px;
+      position: relative;
+      top: 0;
+      transition: all 0.2s ease;
+    }
+
+    body .clipboard:hover {
+      top: 2px;
+    }
+
+    body p {
+      font-weight: 700;
+    }
   </style>
 </head>
 
@@ -90,25 +94,25 @@ body p {
   <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
 
 
-    <div class="text-center">
+  <div class="text-center">
 
-        <img src="download.svg" class="img-fluid img-responsive" style="height: 200px;">
-    </div>
+    <img src="\download.svg" class="img-fluid img-responsive" style="height: 200px;">
+  </div>
 
 
   <div class="carad mt-5">
     <div class="card-bodqy">
-      
 
-        <div class="background">
-            <center>
-              <button class="clipboard">Download Files</button>
-              <p>Have you already clicked?</p>
-            </center>
-            </div>
 
+      <div class="background">
+        <center>
+          <button class="clipboard">Download Files</button>
+          <p>Have you already clicked?</p>
+        </center>
       </div>
+
     </div>
+  </div>
   </div>
 
 
@@ -120,7 +124,7 @@ body p {
 
   <script>
     $(function () {
-      $.fn.filepond.registerPlugin(FilePondPluginImagePreview, );
+      $.fn.filepond.registerPlugin(FilePondPluginImagePreview,);
       $('.my-pond').filepond();
       $('.my-pond').filepond('allowMultiple', true);
       $('.my-pond').on('FilePond:addfile', function (e) {
